@@ -24,6 +24,10 @@ json:
   Jekyll_Theme: https://github.com/piazzai/hacked-jekyll
   Repo: https://github.com/TotalDwarf03/TotalDwarf03.github.io
 
+# Date format for last-modified-at plugin (Uses Liquid Date Format)
+last-modified-at:
+    date-format: '%d-%b-%y %H:%M'
+
 exclude:
   - LICENSE
   - README.md
@@ -31,6 +35,7 @@ exclude:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-last-modified-at
 
 whitelist:
   - jekyll-sitemap

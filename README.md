@@ -7,6 +7,8 @@ The site is created using [Jekyll](https://jekyllrb.com/) and [Github Pages](htt
 The Jekyll theme used is available on Github and is called [Hacked Jekyll](https://github.com/piazzai/hacked-jekyll).
 It is created by [Piazzai](https://github.com/piazzai).
 
+I have made some changes to the theme, such as adding a last modified time to the page.
+
 ## Usage
 
 1. Clone the Repo
