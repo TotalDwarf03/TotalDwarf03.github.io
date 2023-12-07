@@ -22,6 +22,7 @@ json:
     Github: https://github.com/TotalDwarf03
     Linkedin: https://www.linkedin.com/in/kieran-pritchard-20a270193/
   Jekyll_Theme: https://github.com/piazzai/hacked-jekyll
+  Repo: https://github.com/TotalDwarf03/TotalDwarf03.github.io
 
 exclude:
   - LICENSE
