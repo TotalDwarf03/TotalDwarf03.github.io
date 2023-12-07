@@ -59,12 +59,6 @@ layout: default
     {% endif %}
   </div>
   <div class="block">
-    {% if site.json.Jekyll_Theme %}
-    {% assign source = site.json.Jekyll_Theme | split: "github.com/" | slice: 1 %}
-    <p><span class="key">Jekyll Theme</span><span class="attr"><a href="{{ site.json.Jekyll_Theme }}" target="_blank">{{ source }}</a></span></p>
-    {% endif %}
-  </div>
-  <div class="block">
     {% if site.json.profiles %}
     <span class="array-key">profiles</span>
     <div class="array">
@@ -72,6 +66,13 @@ layout: default
       <p class="array-attr"><a href="{{ i | slice: 1 }}" target="_blank">{{ i | slice: 0 }}</a></p>
       {% endfor %}
     </div>
+    {% endif %}
+  </div>
+  <br>
+  <div class="block">
+    {% if site.json.Jekyll_Theme %}
+    {% assign source = site.json.Jekyll_Theme | split: "github.com/" | slice: 1 %}
+    <p><span class="key">Jekyll Theme</span><span class="attr"><a href="{{ site.json.Jekyll_Theme }}" target="_blank">{{ source }}</a></span></p>
     {% endif %}
   </div>
 </main>
