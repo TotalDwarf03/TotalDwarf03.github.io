@@ -13,10 +13,7 @@ It is created by [Piazzai](https://github.com/piazzai).
 2. Install Ruby and Bundler (Bundler is normally included with the Ruby installation)
 3. Navigate to the Repo in Git Bash
 4. Run `bundle install`
-5. Run the site locally using:
-    ```
-        bundle exec jekyll serve
-    ```
+5. Run the site locally using `bundle exec jekyll serve`
 6. Navigate to http://localhost:4000 to view the site
 
 ## Additional Comments
