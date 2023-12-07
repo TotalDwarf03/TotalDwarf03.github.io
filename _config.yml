@@ -1,36 +1,27 @@
 # this is only for search engines, it does not appear in the home
 # as long as the json variables name and description are provided
-title: Hacked Jekyll
-description: Jekyll microtheme that looks like JSON
+title: TotalDwarf.dev
+description: A Summary Page for Kieran Pritchard.
 baseurl: ""
 url: https://totaldwarf.dev
 
 # this information is shown on the homepage, all fields are optional and
 # can be declared either as a single string or as a string array/hash
 json:
-  name: Place Holder
+  name: Kieran Pritchard
   description:
-    - Hello!
-    - This tiny website
-    - Looks like json
-  cv: assets/cv.pdf
-  address:
-    - University of Jekyll
-    - Department of Themes
-    - 123 Main St, Anytown, USA
+    - Hi!
+    - Welcome to TotalDwarf.dev.
+    - A minimal landing page to show you everything about me!
+    - Please have a look around!
+  # cv: assets/cv.pdf
   contact:
-    office: Foobar Hall 1.23
-    phone: +1 234 567 890
-    email: username@domain.com
-  demo: https://hacked-jekyll.netlify.app
-  source: https://github.com/piazzai/hacked-jekyll
+    phone: 07951 357755
+    email: kierock03@gmail.com
   profiles:
-    facebook: https://www.facebook.com
-    twitter: https://twitter.com
-    instagram: https://www.instagram.com
-    linkedin: https://www.linkedin.com
-    stackoverflow: https://stackoverflow.com
-    github: https://github.com
+    Github: https://github.com/TotalDwarf03
+    Linkedin: https://www.linkedin.com/in/kieran-pritchard-20a270193/
+  Jekyll Theme: https://github.com/piazzai/hacked-jekyll
 
 exclude:
   - LICENSE
