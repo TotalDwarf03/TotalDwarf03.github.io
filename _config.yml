@@ -14,7 +14,7 @@ json:
     - Welcome to TotalDwarf.dev.
     - A minimal landing page to show you everything about me!
     - Please have a look around!
-  # cv: assets/cv.pdf
+  cv: assets/cv.pdf
   contact:
     phone: 07951 357755
     email: kierock03@gmail.com
