@@ -12,7 +12,7 @@ json:
   description:
     - Hi!
     - Welcome to TotalDwarf.dev.
-    - A minimal landing page to show you everything about me!
+    - A website to show you everything about me!
     - Please have a look around!
   cv: assets/cv.pdf
   contact:
