@@ -14,7 +14,9 @@ It is created by [Piazzai](https://github.com/piazzai).
 3. Navigate to the Repo in Git Bash
 4. Run `bundle install`
 5. Run the site locally using:
-    bundle exec jekyll serve
+    ```
+        bundle exec jekyll serve
+    ```
 6. Navigate to http://localhost:4000 to view the site
 
 ## Additional Comments
