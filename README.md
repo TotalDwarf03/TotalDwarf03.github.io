@@ -17,8 +17,3 @@ I have made some changes to the theme, such as adding a last modified time to th
 4. Run `bundle install`
 5. Run the site locally using `bundle exec jekyll serve`
 6. Navigate to http://localhost:4000 to view the site
-
-## Additional Comments
-I do plan to add more content to my Github Pages site without the use of Jekyll.
-I'd like to add a more detailed portfolio section using HTML, CSS and JavaScript.
-I might even look into a framework such as React or Angular.
