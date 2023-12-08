@@ -15,6 +15,10 @@ json:
     - A website to show you everything about me!
     - Please have a look around!
   cv: assets/cv.pdf
+  navigation:
+    Experience: experience
+    Education: education
+    Projects: projects
   contact:
     phone: 07951 357755
     email: kierock03@gmail.com
@@ -22,6 +26,24 @@ json:
     Github: https://github.com/TotalDwarf03
     Linkedin: https://www.linkedin.com/in/kieran-pritchard-20a270193/
   Repo: https://github.com/TotalDwarf03/TotalDwarf03.github.io
+
+experience:
+  title: Experience
+  description:
+    - Here is a list of my recent experiences
+    - For more information please check out my Linkedin!
+
+education:
+  title: Education
+  description:
+    - Here are some details about my education
+    - For more information please check out my Linkedin!
+
+projects:
+  title: Projects
+  description:
+    - Here are some of my favourite projects
+    - To see more of my projects, visit my Github!
 
 exclude:
   - LICENSE

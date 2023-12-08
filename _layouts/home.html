@@ -3,6 +3,7 @@ layout: default
 ---
 
 <main class="json">
+  <!-- Name and Description -->
   <div class="block">
     {% if site.json.name %}
     <p><span class="key">name</span><span class="attr">{{ site.json.name }}</span></p>
@@ -24,13 +25,29 @@ layout: default
     <p><span class="key">description</span><span class="attr">{{ site.description }}</span></p>
     {% endif %}
   </div>
+
+  <!-- CV -->
   <div class="block">
     {% if site.json.cv %}
     {% assign cv = site.json.cv | split: "/" | slice: -1 %}
     <p><span class="key">cv</span><span class="attr"><a href="{{ site.json.cv }}" target="_blank">{{ cv }}</a></span></p>
     {% endif %}
   </div>
+
+  <!-- Links to other pages -->
   <div class="block">
+    {% if site.json.navigation %}
+    <span class="array-key">navigation</span>
+    <div class="array">
+      {% for i in site.json.navigation %}
+      <p class="array-attr"><a href="{{ i | slice: 1 }}">{{ i | slice: 0 }}</a></p>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+
+  <!-- Address -->
+  <!-- <div class="block">
     {% if site.json.address %}
     {% if site.json.address.first %}
     <p><span class="array-key">address</span></p>
@@ -43,7 +60,9 @@ layout: default
     <p><span class="key">address</span><span class="attr">{{ site.json.address }}</span></p>
     {% endif %}
     {% endif %}
-  </div>
+  </div> -->
+
+  <!-- Contact -->
   <div class="block">
     {% if site.json.contact %}
     {% if site.json.contact.first %}
@@ -58,6 +77,8 @@ layout: default
     {% endif %}
     {% endif %}
   </div>
+
+  <!-- Profiles -->
   <div class="block">
     {% if site.json.profiles %}
     <span class="array-key">profiles</span>
@@ -69,13 +90,17 @@ layout: default
     {% endif %}
   </div>
   <br>
+
+  <!-- Repo Link -->
   <div class="block">
     {% if site.json.Repo %}
     {% assign source = site.json.Repo | split: "github.com/" | slice: 1 %}
     <p><span class="key">Website Repository</span><span class="attr"><a href="{{ site.json.Repo }}" target="_blank">{{ source }}</a></span></p>
     {% endif %}
   </div>
+
+  <!-- Last Modified -->
   <div class="block">
-    <p><span class="key">Last Modified</span><span class="attr">07-dec-23 18:34</span></p>
+    <p><span class="key">Last Modified</span><span class="attr">08-dec-23</span></p>
   </div>
 </main>

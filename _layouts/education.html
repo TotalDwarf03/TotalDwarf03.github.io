@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<main class="json">
+  <div class="block">
+    {% if site.education.title %}
+    <p><span class="key">Title</span><span class="attr">{{ site.education.title }}</span></p>
+    {% endif %}
+    {% if site.education.description %}
+    {% if site.education.first %}
+    <div id="typed-strings">
+      {% for i in site.education.description %}
+      <span>{{ i | prepend: '"' | append: '",'}}</span>
+      {% endfor %}
+    </div>
+    <p><span class="key">description</span>{% include typed.html %}</p>
+    {% else %}
+    <p><span class="key">description</span><span class="attr">{{ site.education.description }}</span></p>
+    {% endif %}
+    {% endif %}
+  </div>
+
+  <br>
+  <!-- Return Button -->
+  <div class="block">
+    {% assign home = site.url | split: "//" | slice: 1 %}
+    <p><span class="key">Return</span><span class="attr"><a href="{{ site.url }}">{{ home }}</a></span></p>
+  </div>
+  <div class="block">
+    <p><span class="key">Last Modified</span><span class="attr">08-dec-23</span></p>
+  </div>
+</main>
