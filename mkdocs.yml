@@ -1,0 +1,21 @@
+site_name: TotalDwarf.dev
+site_url: "https://totaldwarf.dev/"
+
+site_description: "A personal portfolio about Kieran Pritchard (TotalDwarf03)"
+site_author: "Kieran Pritchard"
+
+repo_url: https://github.com/TotalDwarf03/TotalDwarf03.github.io
+repo_name: TotalDwarf03.github.io
+
+nav:
+  - Home: 'index.md'
+theme:
+  name: material
+  palette:
+    scheme: slate
+
+  logo: ./logo.png
+  favicon: ./favicon.ico
+
+  icon:
+    repo: fontawesome/brands/github
