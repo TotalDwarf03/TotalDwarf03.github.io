@@ -14,8 +14,8 @@ theme:
   palette:
     scheme: slate
 
-  logo: ./logo.png
-  favicon: ./favicon.ico
+  logo: ./assets/logo.png
+  favicon: ./assets/favicon.ico
 
   icon:
     repo: fontawesome/brands/github
