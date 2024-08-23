@@ -2,17 +2,17 @@
 
 ::timeline:: center alternate headings
 
-- content: First implementation.
-  icon: ':material-rocket-launch-outline:'
-  sub_title: Feb '24
+- content: 
+  icon: ':octicons-graph-16:'
+  sub_title: Feb '24 | Office for National Statistics
   title: Apprentice Software Engineer
-- content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  icon: ':fontawesome-solid-gem:'
-  sub_title: Dec '23
+- content: 
+  icon: ':octicons-graph-16:'
+  sub_title: Dec '23 | Office for National Statistics
   title: Power Bi Developer
-- content: Lorem ipsum dolor sit amet.
-  icon: ':material-bug:'
-  sub_title: Sept '22
+- content: 
+  icon: ':window:'
+  sub_title: Sept '22 | UK Windows & Doors Group
   title: Junior Application Developer
 
 ::/timeline::
