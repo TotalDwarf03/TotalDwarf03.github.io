@@ -1,6 +1,6 @@
 # Who am I?
 
-![Photo of Kieran](./assets/me.jpeg){: style="width:35%; float:left; padding-right:20px;"}
+![Photo of Kieran](./assets/me.jpeg){: class="self_portrait"}
 
 I'm Kieran, an Apprentice Software Engineer based in Bridgend, South Wales. I've been working in the industry since I started my apprenticeship in 2022. I've always enjoyed STEM[^1] based subjects, originally wanting to become some kind of engineer. As I grew up and progressed through school, I took a natural liking towards computers and tech, and really enjoyed making *things*. I had a love for DIY and problem solving. This made me a natual fit to become a software engineer but most importantly, I really enjoy bashing my keyboard to make something cool!
 
