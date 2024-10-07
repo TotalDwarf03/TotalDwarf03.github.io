@@ -8,7 +8,12 @@ repo_url: https://github.com/TotalDwarf03/TotalDwarf03.github.io
 repo_name: TotalDwarf03.github.io
 
 nav:
-  - Home: 'index.md'
+  - Welcome: 'index.md'
+  - Who am I?: 'about.md'
+  - Places I've Worked: 'experience.md'
+  - Things I've Done: 'projects.md'
+  - Stuff I Use: 'techstack.md'
+  - Get in Touch: 'contact.md'
 theme:
   name: material
   language: en
@@ -17,7 +22,7 @@ theme:
     # toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: white
+      primary: black
       accent: deep purple
       toggle:
         icon: material/weather-night
@@ -26,7 +31,7 @@ theme:
     # toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: black
+      primary: white
       accent: deep purple
       toggle:
         icon: material/weather-sunny
@@ -41,6 +46,7 @@ theme:
   icon:
     logo: fontawesome/solid/computer
     repo: fontawesome/brands/github
+    annotation: material/star-four-points-circle
 
   features:
     - navigation.tracking
@@ -48,12 +54,15 @@ theme:
     - navigation.path
     - navigation.top
     - navigation.footer
+    - navigation.tabs
 
     - toc.integrate
 
     - search.suggest
 
     - header.autohide
+
+    - content.footnote.tooltips
 
 extra:
   social:
@@ -64,11 +73,26 @@ extra:
       link: https://www.linkedin.com/in/kieran-pritchard-20a270193/
 
     - icon: fontawesome/solid/paper-plane
-      link: mailto:kieran@totaldwarf.dev
+      link: mailto:kierock03@gmail.com
+
+extra_css:
+  - css/neoteroi-mkdocs.css
+  - css/main.css
 
 plugins:
   - git-revision-date-localized:
       type: date
   - search
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - admonition
+  - footnotes
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - neoteroi.timeline
 
 copyright: Copyright &copy; 2024 Kieran Pritchard
