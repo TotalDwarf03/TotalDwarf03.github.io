@@ -1,0 +1,51 @@
+.components-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+@media only screen and (min-width: 70em) {
+    .components-grid {
+        grid-template-columns: 3fr 9fr;
+    }
+
+    .components-grid aside {
+        position: sticky;
+        top: calc(var(--global-space) * 2);
+    }
+}
+
+.current-experience {
+    border-color: var(--primary-color);
+    border-width: 2px;
+}
+
+.current-experience header {
+    background-color: var(--primary-color);
+    color: var(--invert-font-color);
+}
+
+h1:before {
+    content: "#";
+    margin-right: 0.5em;
+}
+
+h2:before {
+    content: "##";
+    margin-right: 0.5em;
+}
+
+h3:before {
+    content: "###";
+    margin-right: 0.5em;
+}
+
+h4:before {
+    content: "####";
+    margin-right: 0.5em;
+}
+
+footer {
+    text-align: center;
+}
