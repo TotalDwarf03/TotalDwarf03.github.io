@@ -21,6 +21,12 @@
     }
 }
 
+@media only screen and (max-width: 70em) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
 .current-experience {
     border-color: var(--primary-color);
     border-width: 2px;
