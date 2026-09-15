@@ -22,7 +22,7 @@ body.portfolio-page {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
   font-size: 1.05rem;
   line-height: 1.7;
   background-image:
@@ -44,8 +44,8 @@ body.portfolio-page {
   align-items: center;
   padding: 1.5rem 0;
   border-bottom: 1px solid var(--line);
-  font-family: "DM Mono", monospace;
-  font-size: 0.78rem;
+  font-family: monospace;
+  font-size: 1rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -97,8 +97,8 @@ a:focus-visible {
 .index-label {
   margin: 0;
   color: var(--teal);
-  font-family: "DM Mono", monospace;
-  font-size: 0.75rem;
+  font-family: monospace;
+  font-size: 1rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
@@ -114,9 +114,10 @@ a:focus-visible {
 
 .intro h1 em {
   color: var(--accent);
-  font-family: var(--serif);
-  font-weight: 400;
-  letter-spacing: -0.09em;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: -0.05em;
 }
 
 .intro-details {
@@ -145,8 +146,8 @@ a:focus-visible {
   padding: 0.45rem 0.7rem;
   color: var(--ink);
   border: 1px solid var(--line);
-  font-family: "DM Mono", monospace;
-  font-size: 0.75rem;
+  font-family: monospace;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -180,7 +181,7 @@ a:focus-visible {
 
 .section-index a {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -216,16 +217,16 @@ h2 {
 h3 {
   margin: 3rem 0 0.5rem;
   color: var(--teal);
-  font-family: "DM Mono", monospace;
-  font-size: 0.82rem;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
 h4 {
   margin: 2rem 0 0.5rem;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -242,8 +243,8 @@ p {
 .content-section > h4 + span {
   display: block;
   color: var(--muted);
-  font-family: "DM Mono", monospace;
-  font-size: 0.78rem;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 .work-entry {
@@ -260,7 +261,7 @@ p {
 .work-entry-header h3 {
   margin: 0.15rem 0 0.25rem;
   color: var(--ink);
-  font-family: "Space Grotesk", sans-serif;
+  font-family: system-ui, -apple-system, sans-serif;
   font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: -0.04em;
@@ -270,8 +271,8 @@ p {
 .work-entry-label {
   margin: 0;
   color: var(--teal);
-  font-family: "DM Mono", monospace;
-  font-size: 0.68rem;
+  font-family: monospace;
+  font-size: 1rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -279,7 +280,7 @@ p {
 .work-role {
   margin: 0;
   color: var(--muted);
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -287,8 +288,8 @@ p {
   display: block;
   margin-top: 0.45rem;
   color: var(--muted);
-  font-family: "DM Mono", monospace;
-  font-size: 0.78rem;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 .work-summary {
@@ -373,8 +374,8 @@ article.project-entry:first-of-type {
   display: none;
   padding: 0.4rem 0.7rem;
   color: var(--muted);
-  font-family: "DM Mono", monospace;
-  font-size: 0.7rem;
+  font-family: monospace;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -401,8 +402,8 @@ article.project-entry h4 {
   padding: 0.35rem 0.6rem;
   color: var(--accent-dark);
   border: 1px solid var(--line);
-  font-family: "DM Mono", monospace;
-  font-size: 0.72rem;
+  font-family: monospace;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -414,7 +415,7 @@ article.project-entry h4 {
 }
 
 .entry-links a span {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .contact-links {
@@ -454,8 +455,8 @@ article.project-entry h4 {
   padding: 0.95rem 0.25rem;
   color: var(--paper);
   border-bottom: 1px solid rgba(238, 244, 241, 0.35);
-  font-family: "DM Mono", monospace;
-  font-size: 0.8rem;
+  font-family: monospace;
+  font-size: 1rem;
   text-decoration: none;
 }
 
@@ -505,8 +506,8 @@ article.education-card-featured {
 .education-card-date {
   padding-top: 0.2rem;
   color: var(--accent-dark);
-  font-family: "DM Mono", monospace;
-  font-size: 0.74rem;
+  font-family: monospace;
+  font-size: 1rem;
   line-height: 1.5;
   text-transform: uppercase;
 }
@@ -518,8 +519,8 @@ article.education-card-featured {
 .education-status {
   margin-bottom: 0.45rem;
   color: var(--teal);
-  font-family: "DM Mono", monospace;
-  font-size: 0.72rem;
+  font-family: monospace;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -537,7 +538,7 @@ article.education-card-featured {
 .education-detail {
   margin: 1.25rem 0 0;
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .results-list {
@@ -556,8 +557,8 @@ article.education-card-featured {
 
 .results-list strong {
   color: var(--accent-dark);
-  font-family: "DM Mono", monospace;
-  font-size: 0.82rem;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 article h4 {
@@ -576,8 +577,8 @@ footer {
   padding: 1.5rem 5rem 2.5rem 0;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-family: "DM Mono", monospace;
-  font-size: 0.72rem;
+  font-family: monospace;
+  font-size: 1rem;
 }
 
 footer hr {
