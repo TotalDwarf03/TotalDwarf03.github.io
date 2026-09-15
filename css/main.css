@@ -50,7 +50,10 @@ body.portfolio-page {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
   font-size: 1.05rem;
   line-height: 1.7;
   background-image:
@@ -102,7 +105,10 @@ main a:not(.social-links a):not(.entry-links a):not(.contact-links a) {
 }
 
 main a:not(.social-links a):not(.entry-links a):not(.contact-links a):hover,
-main a:not(.social-links a):not(.entry-links a):not(.contact-links a):focus-visible {
+main
+  a:not(.social-links a):not(.entry-links a):not(
+    .contact-links a
+  ):focus-visible {
   background-size: 100% 1px;
 }
 
@@ -157,7 +163,10 @@ main a:not(.social-links a):not(.entry-links a):not(.contact-links a):focus-visi
 
 .intro h1 em {
   color: var(--accent);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
   font-weight: 500;
   font-style: normal;
   letter-spacing: -0.05em;
@@ -318,7 +327,10 @@ p {
 .work-entry-header h3 {
   margin: 0.15rem 0 0.25rem;
   color: var(--ink);
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
   font-size: 1.7rem;
   font-weight: 600;
   letter-spacing: -0.04em;
