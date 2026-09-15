@@ -1,12 +1,12 @@
 :root {
-  --paper: #eef4f1;
-  --paper-deep: #dce9e4;
-  --ink: #142b35;
-  --muted: #52676b;
-  --line: #bfd0ca;
-  --accent: #d9943f;
-  --accent-dark: #9a5c20;
-  --teal: #176b78;
+  --paper: #eef3ef;
+  --paper-deep: #dce8df;
+  --ink: #1d3028;
+  --muted: #5b6f64;
+  --line: #bfd0c4;
+  --accent: #4f8969;
+  --accent-dark: #326247;
+  --teal: #246b72;
   --serif: Georgia, "Times New Roman", serif;
 }
 
