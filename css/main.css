@@ -18,6 +18,34 @@ html {
   scroll-behavior: smooth;
 }
 
+html.js:not(.page-ready) .site-header,
+html.js:not(.page-ready) .intro h1,
+html.js:not(.page-ready) .intro-details {
+  opacity: 0;
+  transform: translateY(1rem);
+}
+
+html.js.page-ready .site-header,
+html.js.page-ready .intro h1,
+html.js.page-ready .intro-details {
+  animation: page-enter 700ms ease both;
+}
+
+html.js.page-ready .intro h1 {
+  animation-delay: 120ms;
+}
+
+html.js.page-ready .intro-details {
+  animation-delay: 240ms;
+}
+
+@keyframes page-enter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body.portfolio-page {
   margin: 0;
   color: var(--ink);
@@ -61,6 +89,21 @@ a {
 a:hover,
 a:focus-visible {
   color: var(--teal);
+}
+
+main a:not(.social-links a):not(.entry-links a):not(.contact-links a) {
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 1px;
+  transition:
+    color 160ms ease,
+    background-size 220ms ease;
+}
+
+main a:not(.social-links a):not(.entry-links a):not(.contact-links a):hover,
+main a:not(.social-links a):not(.entry-links a):not(.contact-links a):focus-visible {
+  background-size: 100% 1px;
 }
 
 .eyebrow {
@@ -188,6 +231,20 @@ a:focus-visible {
 .section-index a:hover,
 .section-index a:focus-visible {
   color: var(--accent-dark);
+}
+
+.section-index a.is-active {
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+.section-index a.is-active::before {
+  content: "";
+  display: inline-block;
+  width: 1.25rem;
+  height: 1px;
+  margin: 0 0.45rem 0.25rem 0;
+  background: var(--accent);
 }
 
 .content-section {
@@ -383,6 +440,19 @@ article.project-entry:first-of-type {
   display: block;
 }
 
+.project-thumbnail img {
+  filter: saturate(0.75);
+  transition:
+    filter 220ms ease,
+    transform 220ms ease;
+}
+
+.project-thumbnail:hover img,
+.project-thumbnail:focus-within img {
+  filter: saturate(1);
+  transform: scale(1.025);
+}
+
 article.project-entry h4 {
   margin: 0;
   font-size: 1.6rem;
@@ -466,6 +536,11 @@ article.project-entry h4 {
   font-size: 1rem;
 }
 
+.contact-links a span:nth-of-type(2) i {
+  display: inline-block;
+  transition: transform 160ms ease;
+}
+
 .contact-links a:hover,
 .contact-links a:focus-visible {
   color: var(--paper);
@@ -476,6 +551,11 @@ article.project-entry h4 {
 .contact-links a:hover span:nth-of-type(2),
 .contact-links a:focus-visible span:nth-of-type(2) {
   color: var(--accent);
+}
+
+.contact-links a:hover span:nth-of-type(2) i,
+.contact-links a:focus-visible span:nth-of-type(2) i {
+  transform: translateX(0.3rem);
 }
 
 .project-entry ul {
@@ -604,6 +684,27 @@ footer a {
   border: 1px solid var(--ink);
   text-decoration: none;
   box-shadow: 0 0.35rem 1rem rgba(20, 43, 53, 0.16);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.75rem);
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+html:not(.js) .back-to-top {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .back-to-top:hover,
@@ -611,6 +712,20 @@ footer a {
   color: var(--paper);
   background: var(--teal);
   border-color: var(--teal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 @media (max-width: 760px) {
