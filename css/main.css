@@ -411,6 +411,44 @@ article.project-entry h4 {
   font-size: 0.9rem;
 }
 
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 2.5rem;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  min-width: 0;
+  padding: 0.85rem 0.9rem;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.contact-links a span:nth-of-type(2) {
+  margin-left: auto;
+  color: var(--accent-dark);
+  font-size: 1rem;
+}
+
+.contact-links a:hover,
+.contact-links a:focus-visible {
+  color: var(--paper);
+  background: var(--teal);
+  border-color: var(--teal);
+}
+
+.contact-links a:hover span:nth-of-type(2),
+.contact-links a:focus-visible span:nth-of-type(2) {
+  color: var(--paper);
+}
+
 .project-entry ul {
   margin-bottom: 0;
 }
@@ -612,6 +650,10 @@ footer a {
 
   h2 {
     font-size: clamp(2.5rem, 13vw, 4rem);
+  }
+
+  .contact-links {
+    grid-template-columns: 1fr;
   }
 
   footer {
