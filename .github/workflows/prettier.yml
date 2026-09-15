@@ -1,0 +1,27 @@
+# A GitHub Action to run Prettier formatting checks on pull requests and pushes.
+---
+name: Prettier Check
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+jobs:
+  prettier-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "25"
+
+      - name: Install dependencies
+        run: npm install --global prettier
+
+      - name: Run prettier
+        id: prettier
+        run: npx prettier . --check
